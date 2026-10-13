@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLU FASHION</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f5f7;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      color: #d1d5db;
+    }
+
+    nav {
+      background: #263449;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    .banner {
+      background: #dce7f5;
+      text-align: center;
+      padding: 45px 15px;
+    }
+
+    .banner h2 {
+      font-size: 30px;
+    }
+
+    .products {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
+      box-shadow: 0 3px 12px #00000012;
+    }
+
+    .product img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .price {
+      color: #e11d48;
+      font-weight: bold;
+    }
+
+    button {
+      background: #111827;
+      color: white;
+      border: 0;
+      padding: 11px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #374151;
+    }
+
+    footer {
+      text-align: center;
+      background: #111827;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BLU FASHION</h1>
+    <p>Phong cách của riêng bạn</p>
+  </header>
+
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#products">Sản phẩm</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+
+  <section class="banner">
+    <h2>BỘ SƯU TẬP MỚI</h2>
+    <p>Đơn giản, trẻ trung, phong cách.</p>
+    <a href="#products">
+      <button>Xem sản phẩm</button>
+    </a>
+  </section>
+
+  <section class="products" id="products">
+
+    <div class="product">
+      <img src="https://placehold.co/400x300/e5e7eb/222222?text=T-Shirt"
+           alt="Áo thun">
+      <h3>Áo thun basic</h3>
+      <p class="price">150.000đ</p>
+      <button onclick="buy('Áo thun basic')">Mua ngay</button>
+    </div>
+
+    <div class="product">
+      ```html
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Áo thun BLU FASHION" style="width:100%; height:250px; object-fit:cover;">
+```
+      <h3>Áo hoodie</h3>
+      <p class="price">320.000đ</p>
+      <button onclick="buy('Áo hoodie')">Mua ngay</button>
+    </div>
+
+    <div class="product">
+      
+<img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80" alt="Quần jeans BLU FASHION" style="width:100%; height:250px; object-fit:cover;">
+
+      <h3>Quần jeans</h3>
+      <p class="price">280.000đ</p>
+      <button onclick="buy('Quần jeans')">Mua ngay</button>
+    </div>
+
+  </section>
+
+  <footer id="contact">
+    <p>BLU FASHION © 2026</p>
+    <p>Liên hệ: blufashion@example.com</p>
+  </footer>
+
+  <script>
+    function buy(product) {
+      alert("Bạn đã chọn: " + product);
+    }
+  </script>
+
+</body>
+</html>
